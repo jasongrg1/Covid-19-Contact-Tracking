@@ -1,0 +1,146 @@
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-weight:bold;
+    font-size: 40pt;
+    font-family: Arial;
+    text-shadow: 0 0 2px black;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    background-color:rgb(173, 185, 202);
+}
+.page {
+    position: relative;
+    height: 79vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.page::before {
+   content: "";
+   background-image: url("watermark.png");
+   background-size: 85vh;
+   background-position: center;
+   background-repeat: no-repeat;
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: -1;
+   opacity: 0.4;
+}
+.column {
+   float: left;
+}
+.left {
+    width: 20%;
+    font-family: Arial;
+    font-size: 24pt;
+}
+.right {
+    width: 80%;
+    font-family: 'Times New Roman';
+    font-size: 20pt;
+    text-align: left;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+ul.sidebar {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+          list-style-type: none;
+          padding: 0px;
+          background-color:rgb(173, 185, 202);
+        overflow: hidden;
+}
+ul.sidebar li a {
+          display: block;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      	color: black;
+      	text-align: center;
+      	text-decoration: none;
+}
+ul.sidebar li a:hover {
+			  background-color: rgb(132, 151, 176);
+}
+ul.sidebar input {
+    font-family: Arial;
+    font-size: 24pt;
+    background-color: rgb(173, 185, 202);
+    border: none;
+    border-color: transparent;
+    outline:none;
+    width: 100%;
+    height: 100px;
+}
+.logout {
+    margin-top: 227px;
+    display: block;
+      	color: black;
+      	text-align: center;
+      	text-decoration: none;
+}
+.logout input:hover { 
+    background-color:rgb(132, 151, 176);
+}
+h2 {
+    font-family: Arial;
+    font-size: 24pt;
+    text-align: center;
+    font-weight: normal;
+}
+hr {
+    width:90%;
+    text-align: left;
+    margin-left: 110px;
+    height:3px;
+    border-width:0;
+    color:black;
+    background-color:black;
+}
+img#map {
+    margin-right: 45px;
+    border: 3px solid black;
+}
+img#marker {
+    width:20px;
+    height:20px;
+}
+  
+.right input {
+    margin-left: 130px;
+    font-family:'Times New Roman';
+    font-size: 20pt;
+    border: 1px solid black;
+}
+input[type=text]{
+      height: 52px;
+      width: 220px;
+      margin-bottom: 20px;
+      text-align: center;
+      background-color: transparent;
+}
+.right input[type="submit"]{
+    margin-top: 320px;
+    height:52px;
+      width: 220px;
+      border-radius: 8px;
+      background-color: white;
+}
+input[type="reset"]{
+      margin-top: 15px;
+      height:52px;
+      width: 220px;
+      border-radius: 8px;
+      background-color: white;
+}
+::placeholder {
+      color: black;
+}

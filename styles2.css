@@ -1,0 +1,67 @@
+h1 {
+   margin: 0;
+   text-align: center;
+   font-weight:bold;
+   font-size: 40pt;
+   font-family: Arial;
+   text-shadow: 0 0 2px black;
+   padding-top: 28px;
+   padding-bottom: 28px;
+   background-color:rgb(173, 185, 202);
+    }
+.page {
+    position: relative;
+    height: 79vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    }
+.page::before {
+    content: "";
+    background-image: url("watermark.png");
+    background-size: 85vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+input {
+    font-family:'Times New Roman';
+    font-size: 20pt;
+    border: 2px solid black;
+}
+input[type=text]{
+    margin-top: 25px;
+    height: 50px;
+    width: 490px;
+    text-align: center;
+    background-color: transparent;
+}
+input[name="name"] {
+    margin-top: 180px;
+}
+input[type=password]{
+    margin-top:25px;
+    height:50px;
+    width: 490px;
+    text-align: center;
+    background-color: transparent;
+}
+div.register {
+    text-align: center;   
+}
+input[type="submit"] {
+    margin-top:50px;
+    height:50px;
+    width: 498px;
+    border-radius: 8px;
+    background-color: white;
+}
+::placeholder {
+    color: black;
+}

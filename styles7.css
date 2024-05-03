@@ -1,0 +1,140 @@
+h1 {
+  margin: 0;
+  text-align: center;
+  font-weight:bold;
+  font-size: 40pt;
+  font-family: Arial;
+  text-shadow: 0 0 2px black;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  background-color:rgb(173, 185, 202);
+}
+.page {
+  position: relative;
+  height: 79vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.page::before {
+   content: "";
+   background-image: url("watermark.png");
+   background-size: 85vh;
+   background-position: center;
+   background-repeat: no-repeat;
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: -1;
+   opacity: 0.4;
+ }
+ .column {
+   float: left;
+}
+.left {
+  width: 20%;
+  background-color:orange;
+  font-family: Arial;
+  font-size: 24pt;
+}
+.right {
+  width: 80%;
+  font-family: 'Times New Roman';
+  font-size: 20pt;
+  text-align: center;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ul.sidebar {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+        list-style-type: none;
+        padding: 0px;
+        background-color:rgb(173, 185, 202);
+      overflow: hidden;
+      }
+ul.sidebar li a {
+        display: block;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    	color: black;
+    	text-align: center;
+    	text-decoration: none;
+    }		  ul.sidebar li a:hover {			  background-color: rgb(132, 151, 176);
+  }
+  ul.sidebar input {
+  font-family: Arial;
+  font-size: 24pt;
+  background-color: rgb(173, 185, 202);
+  border: none;
+  border-color: transparent;
+  outline:none;
+  width: 100%;
+  height: 100px;
+}
+.logout {
+  margin-top: 227px;
+  display: block;
+    	color: black;
+    	text-align: center;
+    	text-decoration: none;
+}
+.logout input:hover { 
+  background-color:rgb(132, 151, 176);
+}
+
+h2 {
+  font-family: Arial;
+  font-size: 24pt;
+  text-align: center;
+  font-weight: normal;
+}
+hr {
+  width:90%;
+  text-align: left;
+  margin-left: 110px;
+  height:3px;
+  border-width:0;
+  color:black;
+  background-color:black;
+}
+p {
+  
+  text-align: center;
+}
+select, input[type=text], input[type=number]{
+    background-color: transparent;
+    width: 570px;
+    margin-left: 30px;
+    margin-top: 20px;
+    height: 65px;
+}
+.right input, select{
+    font-family:'Times New Roman';
+    font-size: 20pt;
+    border: 2px solid black;
+}
+input[type=text] , input[type=number]{
+    margin-top: 35px;
+}
+.right input[type="submit"], input[type="reset"]{
+    height:50px;
+    width: 170px;
+    border-radius: 8px;
+    background-color: white;
+    margin-right: 100px;
+}
+.right input[type="submit"]{
+    margin-top:95px;
+    margin-right: 300px;
+}
+input[type="reset"]{
+    margin-left:340px;
+    
+}        
